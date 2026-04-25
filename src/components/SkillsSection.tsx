@@ -1,58 +1,68 @@
 import { motion } from "framer-motion";
 import {
-  FiPieChart, FiCode, FiCloud, FiShield, FiServer, FiZap, FiDatabase, FiActivity, FiBarChart2, FiCheckCircle
+  FiPieChart, FiCode, FiCloud, FiShield, FiServer, FiZap, FiDatabase, FiActivity, FiBarChart2, FiMaximize, FiCpu, FiSettings
 } from "react-icons/fi";
 
 const skillCategories = [
   {
     icon: FiCode,
     title: "Programming Languages",
-    skills: ["Java", "JavaScript", "TypeScript", "SQL"],
+    skills: ["Java", "C#", "Python", "SQL"],
   },
   {
     icon: FiServer,
-    title: "Backend Development",
-    skills: ["Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Hibernate", "Spring Cloud", "Spring WebFlux", "Microservices", "REST APIs", "GraphQL", "OpenAPI (Swagger)", "Feign Client", "Resilience4j"],
+    title: "Backend Development & Frameworks",
+    skills: ["Spring Boot", "Spring MVC", "Spring Security", ".NET / ASP.NET Core", "REST APIs", "API Design", "GraphQL", "Hibernate", "Entity Framework Core"],
   },
   {
     icon: FiPieChart,
     title: "Frontend Development",
-    skills: ["React.js", "Angular", "HTML5", "CSS3"],
-  },
-  {
-    icon: FiDatabase,
-    title: "Data & Persistence",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
-  },
-  {
-    icon: FiCloud,
-    title: "Cloud & Distributed Systems",
-    skills: ["AWS (Lambda, API Gateway, ECS, EKS, S3, CloudFront, IAM)", "GCP (Cloud Run, Pub/Sub)", "Serverless Architecture"],
+    skills: ["JavaScript", "TypeScript", "React.js", "Angular", "HTML5", "CSS3"],
   },
   {
     icon: FiZap,
-    title: "DevOps & CI/CD",
-    skills: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Azure DevOps", "Terraform", "Maven", "Gradle"],
+    title: "Microservices & Distributed Systems",
+    skills: ["Microservices Architecture", "Spring Cloud (Config, Eureka, Gateway)", "API Gateway", "Service Discovery", "Distributed Systems", "Event-Driven Architecture", "Concurrency", "Fault Tolerance"],
+  },
+  {
+    icon: FiCloud,
+    title: "Cloud Platforms",
+    skills: ["AWS (EC2, S3, Lambda, RDS, DynamoDB, SNS, SQS)", "Microsoft Azure", "Azure Storage"],
+  },
+  {
+    icon: FiSettings,
+    title: "Containerization & DevOps",
+    skills: ["Docker", "Kubernetes", "Terraform", "CI/CD", "Jenkins", "Azure DevOps", "GitHub Actions"],
+  },
+  {
+    icon: FiDatabase,
+    title: "Databases & Caching",
+    skills: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB", "DynamoDB", "Redis"],
   },
   {
     icon: FiActivity,
-    title: "Event Streaming & Integration",
-    skills: ["Apache Kafka", "Event-Driven Architecture"],
+    title: "Messaging & Streaming",
+    skills: ["Apache Kafka", "RabbitMQ"],
   },
   {
-    icon: FiShield,
-    title: "Security & Authentication",
-    skills: ["Spring Security", "JWT", "OAuth2", "RBAC"],
+    icon: FiMaximize,
+    title: "System Design & Scalability",
+    skills: ["System Design", "Scalable Systems", "Asynchronous Processing", "High Availability"],
   },
   {
     icon: FiBarChart2,
-    title: "Observability & Monitoring",
-    skills: ["Prometheus", "Grafana", "Splunk", "Datadog"],
+    title: "Monitoring & Observability",
+    skills: ["Prometheus", "Grafana", "AWS CloudWatch", "Logging"],
   },
   {
-    icon: FiCheckCircle,
-    title: "Software Engineering Practices",
-    skills: ["System Design", "Design Patterns", "SOLID Principles", "Agile", "Test-Driven Development"],
+    icon: FiShield,
+    title: "Security & Build Tools",
+    skills: ["Spring Security", "OAuth2", "JWT", "RBAC", "Maven", "Gradle", "Git", "Postman"],
+  },
+  {
+    icon: FiCpu,
+    title: "AI & Generative AI Engineering",
+    skills: ["OpenAI APIs", "LLM Integration", "Prompt Engineering", "Retrieval-Augmented Validation Workflows", "AI-Assisted Backend Automation", "Transaction Anomaly Classification Using LLMs"],
   },
 ];
 

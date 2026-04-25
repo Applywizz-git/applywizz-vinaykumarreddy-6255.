@@ -85,9 +85,9 @@ const ContactSection = () => {
             style={{ perspective: 1200 }}
           >
             {[
-              { icon: FiPhone, label: "Phone", value: "+1 (940) 344-3693", color: "from-blue-400 to-blue-600" },
-              { icon: FiMail, label: "Email", value: "venkata.chiranjeevi557@gmail.com", color: "from-purple-400 to-purple-600" },
-              { icon: FiMapPin, label: "Location", value: "Richardson, TX", color: "from-orange-400 to-orange-600" },
+              { icon: FiPhone, label: "Phone", value: "+1 (401) 659-4673", color: "from-blue-400 to-blue-600" },
+              { icon: FiMail, label: "Email", value: "vinayvkumarreddy@gmail.com", color: "from-purple-400 to-purple-600" },
+              { icon: FiMapPin, label: "Location", value: "Seattle, WA (Open to Relocate)", color: "from-orange-400 to-orange-600" },
             ].map((item, i) => (
               <motion.div
                 key={item.label}

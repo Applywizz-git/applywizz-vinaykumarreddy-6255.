@@ -12,15 +12,13 @@ const Footer = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
         >
-          © {new Date().getFullYear()} — <span className="text-foreground font-black uppercase tracking-widest">Venkata Chiranjeevi Yedupati</span>
+          © {new Date().getFullYear()} — <span className="text-foreground font-black uppercase tracking-widest">Vinay Kumar</span>
           <FiHeart className="text-accent animate-pulse" size={14} />
         </motion.p>
         <div className="flex gap-6">
           {[
-            { icon: FiMail, href: "mailto:venkata.chiranjeevi557@gmail.com", label: "Email" },
-            { icon: FiLinkedin, href: "https://www.linkedin.com/in/venkatachiranjeevi/", label: "LinkedIn" },
-            { icon: FiGithub, href: "https://github.com/chiranjeevi557", label: "GitHub" },
-            { icon: SiLeetcode, href: "https://leetcode.com/u/chiranjeevi557/", label: "LeetCode" }
+            { icon: FiMail, href: "mailto:vinayvkumarreddy@gmail.com", label: "Email" },
+            { icon: FiLinkedin, href: "https://www.linkedin.com/in/vinay-kumar-reddy-vippala-a5957a300/", label: "LinkedIn" },
           ].map((social, i) => (
 
             <motion.a

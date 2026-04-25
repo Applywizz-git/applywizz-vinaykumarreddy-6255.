@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
   const [show, setShow] = useState(true);
-  const firstName = "VENKATA CHIRANJEEVI";
-  const lastName = "YEDUPATI";
+  const firstName = "VINAY";
+  const lastName = "KUMAR";
 
   useEffect(() => {
     const timer = setTimeout(() => {

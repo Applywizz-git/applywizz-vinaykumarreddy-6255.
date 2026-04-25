@@ -4,17 +4,17 @@ import { useRef, useEffect, useState } from "react";
 import { FiZap, FiSettings, FiCode, FiCloud, FiShield } from "react-icons/fi";
 
 const highlights = [
-  { icon: FiCode, label: "Microservices" },
+  { icon: FiCode, label: "Java & C#" },
   { icon: FiZap, label: "Event-Driven (Kafka)" },
-  { icon: FiCloud, label: "Cloud (AWS/GCP)" },
-  { icon: FiShield, label: "Spring Security" },
-  { icon: FiSettings, label: "CI/CD Pipelines" },
+  { icon: FiCloud, label: "Cloud (AWS/Azure)" },
+  { icon: FiShield, label: "Generative AI" },
+  { icon: FiSettings, label: "Microservices" },
 ];
 
 const counters = [
-  { target: 4, suffix: "+", label: "Years Experience" },
-  { target: 35, suffix: "%", label: "Throughput Increase" },
-  { target: 45, suffix: "%", label: "Faster Release Cycles" },
+  { target: 5, suffix: "+", label: "Years Experience" },
+  { target: 40, suffix: "%", label: "Authorization Speed" },
+  { target: 50, suffix: "%", label: "Latency Reduction" },
 ];
 
 const Counter = ({ target, suffix, label }: { target: number; suffix: string; label: string }) => {
@@ -67,7 +67,7 @@ const AboutSection = () => {
         >
           <p className="text-accent text-sm tracking-[0.4em] uppercase font-heading font-black mb-4">About Me</p>
           <h2 className="text-4xl md:text-8xl font-heading font-black text-foreground tracking-tighter">
-            Building Scalable Cloud Systems
+            Architecting Distributed Systems
           </h2>
         </motion.div>
 
@@ -78,10 +78,10 @@ const AboutSection = () => {
           viewport={{ once: true }}
         >
           <p className="text-muted-foreground font-body text-xl md:text-2xl leading-relaxed">
-            Java Developer with 4+ years of experience delivering scalable, cloud-native applications using Java, Spring Boot, and React.js
-            across enterprise and fintech domains. Experienced in building microservices architectures, designing REST APIs, 
-            and implementing event-driven systems using Apache Kafka to support high-throughput and reliable data processing.
-            Skilled in securing applications using Spring Security, JWT, and OAuth2.
+            Software Engineer with 5 years of experience designing distributed backend services using Java, Spring Boot, Spring MVC, C#, and
+            microservices architecture across fintech platforms supporting high-availability transaction processing workflows.
+            Expert in building event-driven pipelines using Apache Kafka and optimizing high-volume data services using SQL Server and Redis.
+            Pioneered Generative AI workflows to reduce manual exception-handling effort.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <div className="h-1 w-20 bg-accent rounded-full" />

@@ -4,8 +4,13 @@ import { FiBookOpen, FiAward } from "react-icons/fi";
 const education = [
   {
     degree: "Master of Science in Computer Science",
-    school: "University of North Texas",
+    school: "Clark University | Worcester, MA",
     icon: FiAward,
+  },
+  {
+    degree: "Bachelor of Technology in Computer Science",
+    school: "Sri Venkateswara University | Andhra Pradesh, India",
+    icon: FiBookOpen,
   },
 ];
 

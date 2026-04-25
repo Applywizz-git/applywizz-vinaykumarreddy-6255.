@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { FiAward, FiCloud, FiPieChart, FiCode, FiZap, FiServer, FiSettings } from "react-icons/fi";
 
 const certifications = [
-  { name: "AWS Certified Solutions Architect - Associate", provider: "AWS", icon: FiCloud },
+  { name: "Google Cloud Professional Cloud Developer", provider: "Coursera", icon: FiCloud },
+  { name: "IBM Generative AI Engineering Professional Certificate", provider: "Coursera", icon: FiZap },
+  { name: "Meta Back-End Developer Professional Certificate", provider: "Coursera", icon: FiServer },
+  { name: "DeepLearning.AI Generative AI with LLMs", provider: "Coursera", icon: FiSettings },
   { name: "Java Programming and Software Engineering Fundamentals", provider: "Coursera", icon: FiCode },
-  { name: "Spring Framework Specialization", provider: "Coursera", icon: FiZap },
-  { name: "Building Scalable Java Microservices with Spring Boot and Spring Cloud ", provider: "Coursera", icon: FiServer },
-  { name: "Full Stack Web Development with React", provider: "Coursera", icon: FiPieChart },
-  { name: "DevOps Foundations: CI/CD", provider: "LinkedIn Learning", icon: FiSettings },
+  { name: "Spring Framework for Java Developers", provider: "Coursera", icon: FiZap },
 ];
 
 const CertificationsSection = () => {

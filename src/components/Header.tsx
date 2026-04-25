@@ -33,7 +33,7 @@ const Header = () => {
               className="text-3xl font-heading font-black text-foreground tracking-tighter flex items-center gap-1"
               whileHover={{ scale: 1.05, rotateY: 10 }}
             >
-              Venkata Chiranjeevi<span className="text-accent group-hover:animate-ping">.</span>
+              Vinay Kumar<span className="text-accent group-hover:animate-ping">.</span>
             </motion.span>
           </Link>
 

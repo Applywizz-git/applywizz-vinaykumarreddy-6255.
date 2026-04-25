@@ -4,27 +4,27 @@ import { FiLayers, FiCloud, FiUsers, FiCpu, FiExternalLink, FiZap, FiShield } fr
 const projects = [
   {
     icon: FiCpu,
-    title: "Enterprise Billing Microservices Platform",
-    description: "Built microservices using Java, Spring Boot, and Spring Cloud with Apache Kafka for billing and invoicing workflows.",
-    tags: ["Java", "Spring Boot", "Kafka", "Docker", "Kubernetes"],
-    highlights: ["Improved scalability", "Reduced processing latency by 55%", "Secured with JWT"],
-    image: "/projects/billing.png",
+    title: "GenAI-Powered Code Review and Developer Productivity Platform",
+    description: "Developed GenAI-driven backend automation services using Python and OpenAI APIs implementing prompt-engineered validation workflows.",
+    tags: ["Python", "OpenAI API", "GitHub Actions", "REST APIs", "LLM"],
+    highlights: ["40% reduction in manual effort", "Automated compliance validation", "Real-time feedback loop"],
+    image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     icon: FiZap,
-    title: "Real-Time Order Processing System",
-    description: "Implemented event-driven backend services using Java and Spring Boot with Apache Kafka for order processing.",
-    tags: ["Java", "Spring Boot", "Kafka", "React.js", "GCP"],
-    highlights: ["50% reduction in processing delays", "Real-time tracking UI", "Scalable on Cloud Run"],
-    image: "/projects/order.png",
+    title: "Cloud-Native Distributed Payment Platform",
+    description: "Engineered event-driven payment orchestration services using Spring Boot and Kafka messaging pipelines for distributed authorization workflows.",
+    tags: ["Spring Boot", "Kafka", "PostgreSQL", "Redis", "Kubernetes"],
+    highlights: ["30% throughput improvement", "Redis caching implementation", "Resilient containerized scaling"],
+    image: "https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    icon: FiShield,
-    title: "Cloud-Based API Gateway & Auth System",
-    description: "Developed centralized API gateway using Java and Spring Boot with Spring Security, JWT, and OAuth2.",
-    tags: ["Java", "Spring Boot", "Redis", "AWS", "OAuth2"],
-    highlights: ["Improved authentication control", "Reduced unauthorized access", "Low latency token management"],
-    image: "/projects/auth.png",
+    icon: FiLayers,
+    title: "Real-Time Analytics and Streaming Platform",
+    description: "Built Kafka-based streaming ingestion pipelines supporting continuous processing of partitioned event datasets for analytics workflows.",
+    tags: ["Kafka", "AWS Lambda", "DynamoDB", "MySQL", "Event-Driven"],
+    highlights: ["40% ingestion capacity increase", "25% compute overhead reduction", "Scalable persistence modeling"],
+    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 
@@ -60,7 +60,6 @@ const ProjectsSection = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-                  loading="lazy"
                   width={800}
                   height={512}
                 />
