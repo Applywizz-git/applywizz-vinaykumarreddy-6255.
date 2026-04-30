@@ -74,37 +74,33 @@ const HeroSection = () => {
             whileHover={{ rotateY: 15, rotateX: -10, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 150, damping: 15 }}
           >
-            <div className="w-full h-full gradient-accent flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_70%)]" />
-              <span className="text-[8rem] lg:text-[15rem] font-heading font-black text-accent-foreground/5 absolute -top-10 -left-10 select-none tracking-tighter">
-                V
-              </span>
-              <span className="text-[8rem] lg:text-[15rem] font-heading font-black text-accent-foreground/5 absolute -bottom-10 -right-10 select-none tracking-tighter">
-                K
-              </span>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
-                className="z-10"
-              >
-                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-heading font-black text-accent-foreground tracking-tight leading-none mb-4 px-2">
-                  VINAY<br />
-                  <span className="opacity-80">KUMAR</span>
-                </h2>
-                <div className="h-1.5 w-24 bg-accent-foreground/30 mx-auto rounded-full shadow-lg mb-6" />
-                <p className="text-accent-foreground/60 font-heading font-bold text-sm md:text-lg tracking-[0.2em] uppercase mb-8">Software Engineer</p>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {["Java", "Spring Boot", "C#", "Kafka", "GenAI"].map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-4 py-1.5 text-[10px] md:text-xs font-heading font-bold rounded-full bg-accent-foreground/10 text-accent-foreground border border-accent-foreground/20 backdrop-blur-md"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
+            <div className="relative w-full h-full group">
+              <img
+                src="/profile.jpg"
+                alt="Vinay Kumar"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent flex flex-col items-center justify-end p-8 pb-12 text-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                >
+                  <p className="text-accent font-heading font-bold text-xs md:text-sm tracking-[0.2em] uppercase mb-4">
+                    Software Engineer
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {["Java", "Spring Boot", "C#", "Kafka", "GenAI"].map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 text-[10px] font-heading font-bold rounded-full bg-accent/10 text-accent border border-accent/20 backdrop-blur-md"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </motion.div>
